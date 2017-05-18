@@ -21,36 +21,50 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">Brand</a>
-                </div>
+        <header role="navigation">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Brand</a>
+                    </div>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="default.aspx">Home</a></li>
-                        <li><a href="About.aspx">About</a></li>
-                        <li><a href="Recipes.aspx">Recipes</a></li>
-                        <li><a href="Add_recipe.aspx">Add recipe</a></li>
-                        <li><a href="Search.aspx">Search</a></li>
-                        <li><a href="Contact_Us.aspx">Contact Us</a></li>
-                    </ul>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li id="home" runat="server"><a href="default.aspx"><i class="fa fa-home fa-lg" aria-hidden="true"></i>Home</a></li>
+                            <li id="about" runat="server"><a href="About.aspx"><i class="fa fa-info" aria-hidden="true"></i>About</a></li>
+                            <li id="recipes" runat="server"><a href="Recipes.aspx"><i class="fa fa-th fa-lg" aria-hidden="true"></i>Recipes</a></li>
+                            <li id="addRecipe" runat="server"><a href="Add_recipe.aspx"><i class="fa fa-cog" aria-hidden="true"></i>Add recipe</a></li>
+                            <li id="search" runat="server"><a href="Search.aspx"><i class="fa fa-th fa-lg" aria-hidden="true"></i>Search</a></li>
+                            <li id="contactUs" runat="server"><a href="Contact_Us.aspx"><i class="fa fa-phone" aria-hidden="true"></i>Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
                 </div>
-                <!-- /.navbar-collapse -->
-            </div>
-            <!-- /.container-fluid -->
-        </nav>
-        <asp:ContentPlaceHolder ID="MainContent" runat="server">
-        </asp:ContentPlaceHolder>
+                <!-- /.container-fluid -->
+            </nav>
+        </header>
+        <!--Main content-->
+        <div role="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <!--footer bar-->
+        <footer role="contentinfo">
+            <nav class="navbar navbar-default navbar-fixed-bottom">
+                <div class="container">
+                    <h4>&copy; 2017 - asp.net assignment 01</h4>
+                </div>
+            </nav>
+        </footer>
+
     </form>
     <script src="Scripts/app.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
