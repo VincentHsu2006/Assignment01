@@ -149,5 +149,25 @@
             </tr>
         </table>
     </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8">
+                <asp:GridView ID="RecipeGridView" runat="server" AutoGenerateColumns="false"
+                    CssClass="table table-bordered table-striped table-hover">
+                    <Columns>
+                        <asp:BoundField DataField="RecipeID" HeaderText="Recipe ID" Visible="true" />
+                        <asp:BoundField DataField="RecipeName" HeaderText="Recipe Name" Visible="true" />
+                        <asp:BoundField DataField="RecipeIngre" HeaderText="Recipe Ingredient" Visible="true" />
+                        <asp:BoundField DataField="RecipePic" HeaderText="Recipe Picture" Visible="true" />
+                        <asp:BoundField DataField="CreateDate" HeaderText="Recipe Created on" Visible="true" 
+                           DataFormatString="{0:MMM dd,yyyy}" />
+                    </Columns>
+                </asp:GridView>
+            </div>
+        </div>
+    </div>
+
+
+
 
 </asp:Content>

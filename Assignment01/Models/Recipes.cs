@@ -5,13 +5,13 @@ namespace Assignment01.Models
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
 
-    public partial class ContosoContext : DbContext
+    public partial class Recipes : DbContext
     {
-        public ContosoContext()
-            : base("name=ContosoConnection")
+        public Recipes()
+            : base("name=Recipes")
         {
         }
-        public virtual DbSet<Recipe> Recipes { set; get; }
+
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
