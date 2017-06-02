@@ -1,1 +1,290 @@
-﻿body { padding-bottom: 70px; }
+﻿body {
+    padding-bottom: 70px;
+    margin: 0;
+    background: #000;
+}
+
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+}
+
+.stopfade {
+    opacity: .5;
+}
+
+#polina {
+    font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+    font-weight: 100;
+    background: rgba(0,0,0,0.3);
+    color: white;
+    padding: 2rem;
+    width: 33%;
+    margin: 2rem;
+    float: right;
+    font-size: 1.2rem;
+}
+
+#polina01 {
+    font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+    font-weight: 100;
+    background: rgba(0,0,0,0.3);
+    color: white;
+    padding: 2rem;
+    width: 100%;
+    margin: 2rem;
+    float: right;
+    font-size: 1.2rem;
+}
+
+.span12 {
+    width: 971px;
+}
+
+h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-top: 0;
+    letter-spacing: .3rem;
+    font-family: "Bookman Old Style";
+    font-size: 40px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 58.4px;
+}
+
+#polina p {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: large;
+}
+
+#polina01 p {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+#polina button {
+    display: block;
+    width: 80%;
+    padding: .4rem;
+    border: none;
+    margin: 1rem auto;
+    font-size: 1.3rem;
+    background: rgba(255,255,255,0.23);
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .3s background;
+}
+
+    #polina button:hover {
+        background: rgba(0,0,0,0.5);
+    }
+
+a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    background: rgba(0,0,0,0.5);
+    padding: .5rem;
+    transition: .6s background;
+}
+
+    a:hover {
+        background: rgba(0,0,0,0.9);
+    }
+
+@media screen and (max-width: 500px) {
+    div {
+        width: 70%;
+    }
+}
+
+@media screen and (max-device-width: 800px) {
+    html {
+        background: url(https://thenewcode.com/assets/images/polina.jpg) #000 no-repeat center center fixed;
+    }
+
+    #bgvid {
+        display: none;
+    }
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 18px;
+}
+
+tr {
+    background-color: #dddddd;
+}
+
+.row {
+    margin: auto;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.thumbnail {
+    background-color: rgba(255,255,255,0.23);
+}
+
+.row2 img {
+    display: block;
+    margin: auto;
+    width: 50%;
+    height ="296" width="480";
+    border-radius: 18px;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+
+#cities {
+    overflow: auto;
+    display: inline-block;
+}
+
+    #cities div {
+        height: 2em;
+        text-align: center;
+        float: left;
+        line-height: 2em;
+        margin: 0 0.25em;
+        background: black;
+        color: white;
+        padding: 0 1em;
+        cursor: pointer;
+    }
+
+#caption {
+    text-align: center;
+    width: 100%;
+    float: left;
+    clear: left;
+    margin: 0.5em 0;
+    font-weight: bold;
+}
+
+#map {
+    min-height: 400px;
+    width: 100%;
+    float: left;
+    clear: left;
+    background-color: grey;
+}
+
+#maparea {
+    float: right;
+    width: 40%;
+    margin-right: 10%;
+}
+
+.req:before {
+    content: "*";
+    color: red;
+}
+
+
+.fa {
+    font-size: 30px;
+    color: white;
+}
+
+#wrapper {
+    background-position: center center;
+    background-size: cover;
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #F0FFFF;
+    overflow: hidden;
+    padding: 10px;
+    margin-left: 10%;
+}
+
+    html > body #wrapper fieldset p {
+        margin-left: 10%;
+    }
+
+body #wrapper fieldset p input[type=submit] {
+    padding: 5px 15px;
+    background: #ccc;
+    border: 0 none;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: black;
+}
+
+body #wrapper fieldset p input[type=reset] {
+    padding: 5px 15px;
+    background: #ccc;
+    border: 0 none;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: black;
+}
+
+fieldset {
+    background-color: rgba(97,189,212,0.4);
+    float: left;
+    width: 40%;
+}
+
+#result {
+    width: 100%;
+}
+
+
+/* Error Message */
+form span {
+    font-size: small;
+    color: red;
+    line-height: 1.5em;
+}
+
+#input-group, .row01, #searchLabel {
+    width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid #000;
+}
+
+.upload {
+    margin: auto;
+    width: 40%;
+    text-align: center;
+}
+
+.h1s {
+    color: #ff6a00;
+}

@@ -32,18 +32,18 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#">Brand</a>
+                        <img src="video/chefHat.jpg" alt="..." height="58" width="54" />
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
-                            <li id="home" runat="server"><a href="default.aspx"><i class="fa fa-home fa-lg" aria-hidden="true"></i>Home</a></li>
-                            <li id="about" runat="server"><a href="About.aspx"><i class="fa fa-info" aria-hidden="true"></i>About</a></li>
-                            <li id="recipes" runat="server"><a href="Recipes.aspx"><i class="fa fa-th fa-lg" aria-hidden="true"></i>Recipes</a></li>
-                            <li id="addRecipe" runat="server"><a href="Add_recipe.aspx"><i class="fa fa-cog" aria-hidden="true"></i>Add recipe</a></li>
-                            <li id="search" runat="server"><a href="Search.aspx"><i class="fa fa-th fa-lg" aria-hidden="true"></i>Search</a></li>
-                            <li id="contactUs" runat="server"><a href="Contact_Us.aspx"><i class="fa fa-phone" aria-hidden="true"></i>Contact Us</a></li>
+                            <li id="home" runat="server"><a href="default.aspx"><i class="fa fa-home fa-lg" aria-hidden="true"></i>&nbsp;Home</a></li>
+                            <li id="about" runat="server"><a href="About.aspx"><i class="fa fa-info fa-lg" aria-hidden="true"></i>&nbsp;About</a></li>
+                            <li id="recipes" runat="server"><a href="Recipes.aspx"><i class="fa fa-th fa-lg" aria-hidden="true"></i>&nbsp;Recipes</a></li>
+                            <li id="addRecipe" runat="server"><a href="Add_recipe.aspx"><i class="fa fa-plus fa-lg" aria-hidden="true"></i>&nbsp;Add recipe</a></li>
+                            <li id="search" runat="server"><a href="Search.aspx"><i class="fa fa-search fa-lg" aria-hidden="true"></i>&nbsp;Search</a></li>
+                            <li id="contactUs" runat="server"><a href="Contact_Us.aspx"><i class="fa fa-phone fa-lg" aria-hidden="true"></i>&nbsp;Contact Us</a></li>
                         </ul>
                     </div>
                     <!-- /.navbar-collapse -->
@@ -69,5 +69,7 @@
     <script src="Scripts/app.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
     <script src="Scripts/jquery-2.2.4.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+
 </body>
 </html>
