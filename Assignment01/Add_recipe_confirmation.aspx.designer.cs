@@ -10,7 +10,7 @@
 namespace Assignment01 {
     
     
-    public partial class Add_recipe {
+    public partial class Add_recipe_confirmation {
         
         /// <summary>
         /// Name control.
@@ -19,7 +19,7 @@ namespace Assignment01 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Name;
+        protected global::System.Web.UI.WebControls.Label Name;
         
         /// <summary>
         /// Owner control.
@@ -28,7 +28,7 @@ namespace Assignment01 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Owner;
+        protected global::System.Web.UI.WebControls.Label Owner;
         
         /// <summary>
         /// Category control.
@@ -37,7 +37,7 @@ namespace Assignment01 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Category;
+        protected global::System.Web.UI.WebControls.Label Category;
         
         /// <summary>
         /// Time control.
@@ -46,7 +46,7 @@ namespace Assignment01 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Time;
+        protected global::System.Web.UI.WebControls.Label Time;
         
         /// <summary>
         /// NumberOfServing control.
@@ -55,7 +55,7 @@ namespace Assignment01 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox NumberOfServing;
+        protected global::System.Web.UI.WebControls.Label NumberOfServing;
         
         /// <summary>
         /// Desc control.
@@ -64,42 +64,6 @@ namespace Assignment01 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Desc;
-        
-        /// <summary>
-        /// Ingrediants control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Ingrediants;
-        
-        /// <summary>
-        /// FileUpload1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload FileUpload1;
-        
-        /// <summary>
-        /// submitdBtn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button submitdBtn;
-        
-        /// <summary>
-        /// discardBtn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button discardBtn;
+        protected global::System.Web.UI.WebControls.Label Desc;
     }
 }

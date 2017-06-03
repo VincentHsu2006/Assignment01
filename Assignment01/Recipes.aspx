@@ -149,7 +149,7 @@
             </tr>
         </table>
     </div>
-    <div class="container">
+    <%--<div class="container">
         <div class="row">
             <div class="col-md-offset-2 col-md-8">
                 <asp:GridView ID="RecipeGridView" runat="server" AutoGenerateColumns="false"
@@ -165,9 +165,5 @@
                 </asp:GridView>
             </div>
         </div>
-    </div>
-
-
-
-
+    </div>--%>
 </asp:Content>

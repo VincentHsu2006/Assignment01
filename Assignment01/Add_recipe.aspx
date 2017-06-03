@@ -8,31 +8,50 @@
             <br />
             <div class="input-group">
                 <span class="input-group-addon" id="basic-addon1">Recipe name: </span>
-                <input type="text" class="form-control" placeholder="Spiny Lobster In Crazy Water" aria-describedby="basic-addon1">
-            </div>
-             <br />
-            <div class="input-group">
-                <span class="input-group-addon" id="basic-addon3">Style: </span>
-                <input type="text" class="form-control" placeholder="French cusine" aria-describedby="basic-addon1">
+                <asp:TextBox ID="Name" type="text" class="form-control" placeholder="Spiny Lobster In Crazy Water" aria-describedby="basic-addon1" runat="server"></asp:TextBox>
             </div>
             <br />
             <div class="input-group">
-                <span class="input-group-addon" id="basic-addon2">Ingrediants: </span>
-                <input type="text" class="form-control" placeholder="Lobster, Wiskey, Cigar" aria-describedby="basic-addon1">
-            </div>           
+                <span class="input-group-addon" id="basic-addon2">Submitted by: </span>
+                <asp:TextBox ID="Owner" type="text" class="form-control" placeholder="French cusine" aria-describedby="basic-addon1" runat="server"></asp:TextBox>
+            </div>
+            <br />
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon3">Category: </span>
+                <asp:TextBox ID="Category" type="text" class="form-control" placeholder="French cusine" aria-describedby="basic-addon1" runat="server"></asp:TextBox>
+            </div>
+            <br />
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon4">Prepare/Cooking Time: </span>
+                <asp:TextBox ID="Time" type="text" class="form-control" placeholder="French cusine" aria-describedby="basic-addon1" runat="server"></asp:TextBox>
+            </div>
+            <br />
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon5">Number of Servings: </span>
+                <asp:TextBox ID="NumberOfServing" type="text" class="form-control" placeholder="French cusine" aria-describedby="basic-addon1" runat="server"></asp:TextBox>
+            </div>
+            <br />
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon6">Recipe Description: </span>
+                <asp:TextBox ID="Desc" type="text" class="form-control" placeholder="French cusine" aria-describedby="basic-addon1" runat="server"></asp:TextBox>
+            </div>
+            <br />
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon7">Ingrediants: </span>
+                <asp:TextBox ID="Ingrediants" type="text" class="form-control" placeholder="Lobster, Wiskey, Cigar" aria-describedby="basic-addon1" runat="server"></asp:TextBox>
+            </div>
             <br />
             <div class="row">
                 <div class="input-group">
                     <span class="input-group-btn">
-                        <button class="btn btn-default" type="button">Upload file: </button>
+                        <asp:FileUpload ID="FileUpload1" type="text" Text="Please upload your pictures." class="form-control" runat="server" />
                     </span>
-                    <input type="text" class="form-control" placeholder="File path...">
                 </div>
             </div>
             <br />
             <div class="upload">
-                <button type="button" class="btn btn-success">Submit</button>
-                <button type="button" class="btn btn-danger">Discard</button>
+                <asp:Button ID="submitdBtn" type="button" class="btn btn-success" runat="server" Text="Submit" OnClick="submitdBtn_Click" />
+                <asp:Button ID="discardBtn" type="button" class="btn btn-danger" runat="server" Text="Discard" OnClick="discardBtn_Click" />
             </div>
             <br />
         </div>

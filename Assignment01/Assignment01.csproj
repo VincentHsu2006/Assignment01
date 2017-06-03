@@ -78,9 +78,11 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="Add_recipe.aspx" />
+    <Content Include="Add_recipe_confirmation.aspx" />
     <Content Include="Contact_Us.aspx" />
     <Content Include="Content\app.css" />
     <Content Include="default.aspx" />
+    <Content Include="IngredientUserControl.ascx" />
     <Content Include="packages.config" />
     <Content Include="Recipes.aspx" />
     <Content Include="Scripts\app.js" />
@@ -139,6 +141,13 @@
     <Compile Include="Add_recipe.aspx.designer.cs">
       <DependentUpon>Add_recipe.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Add_recipe_confirmation.aspx.cs">
+      <DependentUpon>Add_recipe_confirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Add_recipe_confirmation.aspx.designer.cs">
+      <DependentUpon>Add_recipe_confirmation.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact_Us.aspx.cs">
       <DependentUpon>Contact_Us.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -156,8 +165,14 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="IngredientUserControl.ascx.cs">
+      <DependentUpon>IngredientUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IngredientUserControl.ascx.designer.cs">
+      <DependentUpon>IngredientUserControl.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Models\ContosoContext.cs" />
-    <Compile Include="Models\Recipes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Recipes.aspx.cs">
       <DependentUpon>Recipes.aspx</DependentUpon>
@@ -166,6 +181,7 @@
     <Compile Include="Recipes.aspx.designer.cs">
       <DependentUpon>Recipes.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Recipes.cs" />
     <Compile Include="Search.aspx.cs">
       <DependentUpon>Search.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

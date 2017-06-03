@@ -280,9 +280,11 @@ form span {
 }
 
 .upload {
-    margin: auto;
     width: 40%;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
 }
 
 .h1s {

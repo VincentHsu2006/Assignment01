@@ -13,5 +13,30 @@ namespace Assignment01
         {
 
         }
+
+        protected void submitdBtn_Click(object sender, EventArgs e)
+        {
+            Application["Recipe"] = new Recipes
+            {
+                Name = Name.Text,
+                Owner = Owner.Text,
+                Category = Category.Text,
+                Time = Convert.ToInt32(Time.Text),
+                NumberOfServing = Convert.ToInt32(NumberOfServing.Text),
+                Desc = Desc.Text
+            };
+            Response.Redirect("Add_recipe_confirmation.aspx");
+
+        }
+        protected void discardBtn_Click(object sender, EventArgs e)
+        {
+            Name.Text = "";
+            Time.Text = "";
+            Owner.Text = "";
+            Category.Text = "";
+            Ingrediants.Text = "";
+            NumberOfServing.Text = "";
+            Desc.Text = "";
+        }
     }
 }
