@@ -1,5 +1,6 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="site01.master.cs" Inherits="Assignment01.site01" %>
 
+
 <!DOCTYPE html>
 
 <!--Name: Zhaohua XU-->

@@ -26,7 +26,6 @@ namespace Assignment01
                 Desc = Desc.Text
             };
             Response.Redirect("Add_recipe_confirmation.aspx");
-
         }
         protected void discardBtn_Click(object sender, EventArgs e)
         {
@@ -34,7 +33,6 @@ namespace Assignment01
             Time.Text = "";
             Owner.Text = "";
             Category.Text = "";
-            Ingrediants.Text = "";
             NumberOfServing.Text = "";
             Desc.Text = "";
         }

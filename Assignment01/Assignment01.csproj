@@ -79,10 +79,12 @@
     <Content Include="About.aspx" />
     <Content Include="Add_recipe.aspx" />
     <Content Include="Add_recipe_confirmation.aspx" />
+    <Content Include="App_Themes\Light\bootstrapLight.css" />
     <Content Include="Contact_Us.aspx" />
     <Content Include="Content\app.css" />
+    <Content Include="App_Themes\Dark\bootstrapDark.css" />
     <Content Include="default.aspx" />
-    <Content Include="IngredientUserControl.ascx" />
+    <Content Include="ingre.ascx" />
     <Content Include="packages.config" />
     <Content Include="Recipes.aspx" />
     <Content Include="Scripts\app.js" />
@@ -92,9 +94,11 @@
     <Content Include="Scripts\jquery-2.2.4.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -123,7 +127,10 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Search.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="setupPage.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="site01.Master" />
   </ItemGroup>
   <ItemGroup>
@@ -165,12 +172,12 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="IngredientUserControl.ascx.cs">
-      <DependentUpon>IngredientUserControl.ascx</DependentUpon>
+    <Compile Include="ingre.ascx.cs">
+      <DependentUpon>ingre.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="IngredientUserControl.ascx.designer.cs">
-      <DependentUpon>IngredientUserControl.ascx</DependentUpon>
+    <Compile Include="ingre.ascx.designer.cs">
+      <DependentUpon>ingre.ascx</DependentUpon>
     </Compile>
     <Compile Include="Models\ContosoContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -188,6 +195,13 @@
     </Compile>
     <Compile Include="Search.aspx.designer.cs">
       <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="setupPage.aspx.cs">
+      <DependentUpon>setupPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="setupPage.aspx.designer.cs">
+      <DependentUpon>setupPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="site01.Master.cs">
       <DependentUpon>site01.Master</DependentUpon>

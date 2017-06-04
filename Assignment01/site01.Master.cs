@@ -12,10 +12,8 @@ namespace Assignment01
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            SetActivePage();
-
+            SetActivePage();        
         }
-
         private void SetActivePage()
         {
             switch (Page.Title)
