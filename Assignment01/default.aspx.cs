@@ -15,19 +15,19 @@ namespace Assignment01
             //{
             //    Application.Remove("PageCounter");
             //}
-            if (Application["PageCounter"] == null)
+            if (Session["PageCounter"] == null)
             {
-                Application["PageCounter"] = 1;
+                Session["PageCounter"] = 1;
             }
             else {
-                Application["PageCounter"] = (int)Application["PageCounter"] + 1;
+                Session["PageCounter"] = (int)Session["PageCounter"] + 1;
             }
             HttpCookie userCookie;
             userCookie = Request.Cookies["Theme"];
-            if (userCookie != null && (int)Application["PageCounter"] == 2)
+            if (userCookie != null && (int)Session["PageCounter"] == 2)
             {
                 ScriptManager.RegisterStartupScript(this, GetType(), "error", "alert('Welcome!');", true);
-            }else  if (userCookie != null && (int)Application["PageCounter"] > 2)
+            }else  if (userCookie != null && (int)Session["PageCounter"] > 2)
             {
                 ScriptManager.RegisterStartupScript(this, GetType(), "error", "alert('Welcome back!');", true);
             }            

@@ -10,13 +10,5 @@
     <asp:RadioButton ID="RadioButton3" runat="server" Text="Cup" />
     <asp:RadioButton ID="RadioButton4" runat="server" Text="Piece" />
 </div>
-<div class="row">
-    <div class="col-lg-6">
-        
-    </div>
-    <!-- /.col-lg-6 -->
-</div>
-<!-- /.row -->
-<button type="submit" class="btn btn-default">Send invitation</button>
-
+<asp:Button ID="Button1" class="btn btn-default" runat="server" Text="Send invitation" OnClick="Button1_Click" />
 
