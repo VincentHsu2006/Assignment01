@@ -1,16 +1,18 @@
 ﻿<%@ Page Title="Add Recipe" Language="C#" MasterPageFile="~/site01.Master" AutoEventWireup="true" CodeBehind="Add_recipe.aspx.cs" Inherits="Assignment01.Add_recipe" %>
-<%@ Register TagPrefix="ingre" TagName="ingreIs" Src="~/ingre.ascx" %>
+<%@ Register TagPrefix="my" TagName="gredient" Src="~/gredient.ascx" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container">
         <div class="row01">
             <h1 class="h1s">Please share your fantastic recipe here!</h1>
             <br />
+            <my:gredient ID="" runat="server"/>
             <br />
             <div class="input-group">
                 <span class="input-group-addon" style="min-width:180px; text-align:left" id="basic-addon1">Recipe name:</span>
                 <asp:TextBox ID="Name" type="text" class="form-control" placeholder="Spiny Lobster In Crazy Water" aria-describedby="basic-addon1" runat="server"></asp:TextBox>
             </div>
+            <my:gredient runat="server" id="ff" />
             <br />
             <div class="input-group">
                 <span class="input-group-addon" style="min-width:180px; text-align:left" id="basic-addon2">Submitted by: </span>

@@ -84,7 +84,7 @@
     <Content Include="Content\app.css" />
     <Content Include="App_Themes\Dark\bootstrapDark.css" />
     <Content Include="default.aspx" />
-    <Content Include="ingre.ascx" />
+    <Content Include="gredient.ascx" />
     <Content Include="packages.config" />
     <Content Include="Recipes.aspx" />
     <Content Include="Scripts\app.js" />
@@ -128,6 +128,25 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Search.aspx" />
     <Content Include="setupPage.aspx" />
+    <Content Include="video\about.mp4" />
+    <Content Include="video\chef.jpg" />
+    <Content Include="video\chef2.jpg" />
+    <Content Include="video\chef3.jpg" />
+    <Content Include="video\chefHat.jpg" />
+    <Content Include="video\dish1.jpg" />
+    <Content Include="video\dish10.jpg" />
+    <Content Include="video\dish11.jpg" />
+    <Content Include="video\dish12.jpg" />
+    <Content Include="video\dish2.jpg" />
+    <Content Include="video\dish3.jpg" />
+    <Content Include="video\dish4.jpg" />
+    <Content Include="video\dish5.jpg" />
+    <Content Include="video\dish6.jpg" />
+    <Content Include="video\dish7.jpg" />
+    <Content Include="video\dish8.jpg" />
+    <Content Include="video\dish9.jpg" />
+    <Content Include="video\food.jpg" />
+    <Content Include="video\food.mp4" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -172,12 +191,12 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="ingre.ascx.cs">
-      <DependentUpon>ingre.ascx</DependentUpon>
+    <Compile Include="gredient.ascx.cs">
+      <DependentUpon>gredient.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ingre.ascx.designer.cs">
-      <DependentUpon>ingre.ascx</DependentUpon>
+    <Compile Include="gredient.ascx.designer.cs">
+      <DependentUpon>gredient.ascx</DependentUpon>
     </Compile>
     <Compile Include="Models\ContosoContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
