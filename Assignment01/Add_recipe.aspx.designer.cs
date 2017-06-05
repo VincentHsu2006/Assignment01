@@ -22,15 +22,6 @@ namespace Assignment01 {
         protected global::System.Web.UI.WebControls.TextBox Name;
         
         /// <summary>
-        /// ff control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Assignment01.gredient ff;
-        
-        /// <summary>
         /// Owner control.
         /// </summary>
         /// <remarks>
@@ -74,6 +65,15 @@ namespace Assignment01 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Desc;
+        
+        /// <summary>
+        /// ingredient control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Assignment01.gredient ingredient;
         
         /// <summary>
         /// FileUpload1 control.

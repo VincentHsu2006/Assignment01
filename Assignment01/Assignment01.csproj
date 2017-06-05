@@ -84,7 +84,7 @@
     <Content Include="Content\app.css" />
     <Content Include="App_Themes\Dark\bootstrapDark.css" />
     <Content Include="default.aspx" />
-    <Content Include="gredient.ascx" />
+    <Content Include="ingredient.ascx" />
     <Content Include="packages.config" />
     <Content Include="Recipes.aspx" />
     <Content Include="Scripts\app.js" />
@@ -191,12 +191,12 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="gredient.ascx.cs">
-      <DependentUpon>gredient.ascx</DependentUpon>
+    <Compile Include="ingredient.ascx.cs">
+      <DependentUpon>ingredient.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="gredient.ascx.designer.cs">
-      <DependentUpon>gredient.ascx</DependentUpon>
+    <Compile Include="ingredient.ascx.designer.cs">
+      <DependentUpon>ingredient.ascx</DependentUpon>
     </Compile>
     <Compile Include="Models\ContosoContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
